@@ -4,3 +4,6 @@ Lib/
 Scripts/
 pyvenv.cfg
 db.sqlite3
+manage.py
+weather_project/
+migrations/

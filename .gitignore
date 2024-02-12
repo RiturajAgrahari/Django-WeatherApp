@@ -7,3 +7,4 @@ db.sqlite3
 manage.py
 weather_project/
 migrations/
+__pycache__/

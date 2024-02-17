@@ -1,2 +1,3 @@
-djnago
+django
 requests
+python-dotenv

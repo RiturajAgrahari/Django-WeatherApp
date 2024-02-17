@@ -15,6 +15,7 @@ This is my own personal project to learn django.
 ## Additional Python Modules Required:
 * django
 * requests
+* python-dotenv
 
 ## Usage:
 ```

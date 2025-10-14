@@ -26,5 +26,5 @@
       "src": "/(.*)",
       "dest": "weather_project/wsgi.py"
     }
-  ],
+  ]
 }

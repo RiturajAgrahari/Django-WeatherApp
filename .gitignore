@@ -4,7 +4,6 @@ Lib/
 Scripts/
 pyvenv.cfg
 db.sqlite3
-manage.py
 migrations/
 __pycache__/
 myenv

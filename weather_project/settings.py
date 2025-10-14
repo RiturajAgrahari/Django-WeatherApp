@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-bjolc)_00d18fd0=g@8vn=-^xe0-o$db)q(yu1d^t*39k%tr9s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -110,6 +110,7 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'  # Or any other suitable path
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'weather_app/static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'

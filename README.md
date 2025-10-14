@@ -28,6 +28,11 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+## Collect staticfiles :
+```commandline
+python manage.py collectstatic
+```
+
 ## Important note:
 In the project you have to make sure about few things in order to make sure it works properly:
 

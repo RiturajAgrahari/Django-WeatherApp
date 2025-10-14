@@ -8,3 +8,4 @@ manage.py
 weather_project/
 migrations/
 __pycache__/
+myenv

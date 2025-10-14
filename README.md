@@ -1,11 +1,11 @@
 # Django-WeatherApp
-This is my own personal project to learn django.
+This was my first personal project in order to master django.
 
-## Project contains:
-* Checking weather of city.
+## Project feature:
+* Checking weather of a city.
 * Comparing weather of 2 cities.
 
-## Technologies Used:
+## Tech stack Used:
 * Python
 * Django
 * Javascript
@@ -17,57 +17,40 @@ This is my own personal project to learn django.
 * requests
 * python-dotenv
 
-## Usage:
-```
-python Django-CRUD-WebApp/manage.py makemigrations
-python Django-CRUD-WebApp/manage.py migrate
-python Django-CRUD-WebApp/manage.py runserver
+## To install the required modules and packages :
+```commandline
+pip install -r requirements.txt
 ```
 
-In your web browser enter the address: http://localhost:8000 or http://127.0.0.1:8000/
+## Run migrations:
+```commandline
+python manage.py makemigrations
+python manage.py migrate
+```
 
+## Important note:
+In the project you have to make sure about few things in order to make sure it works properly:
 
-## Note:
-In your project you have to make sure about these things:
 ### .env:
 Create a .env folder in root file, and use your api token into it.
 
-Get your api token : https://openweathermap.org
+Get your api token from : https://openweathermap.org
 ```
 TOKEN = 'your_token_here'
 ```
 
-### settings.py:
-```
-from pathlib import Path
-import os
-```
-```
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'weather_app'  # or your app_name if any
-]
-```
-```
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'weather_app/static')]
+## Et voila!, now you can run the project locally.  
+
+```commandline
+python manage.py runserver
 ```
 
-### urls.py:
-```
-from django.contrib import admin
-from django.urls import include, path
+In your web browser enter the address: http://localhost:8000 or http://127.0.0.1:8000/
+
+## Adios!
+Thanks a lot for looking at my project
+
+To keep an eye on me you can have a look at my portfolio - 
 
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('weather_app.urls')),
-]
-```
-
-## Bie...
+https://rituraj-agrahari.com
